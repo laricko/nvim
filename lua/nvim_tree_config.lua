@@ -12,6 +12,7 @@ local function my_on_attach(bufnr)
     vim.keymap.set('n', '<A-Enter>', api.node.open.tab, opts('Open: New Tab'))
     vim.keymap.set('n', 'r', api.fs.rename, opts('Rename'))
     vim.keymap.set('n', 'd', api.fs.remove, opts('Delete'))
+    vim.keymap.set('n', 'c', api.fs.create, opts('Create'))
 
     -- api.config.mappings.default_on_attach(bufnr)
 end
