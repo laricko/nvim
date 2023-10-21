@@ -1,4 +1,4 @@
-return require('packer').startup(function(use)
+require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
@@ -6,3 +6,6 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
 
 end)
+
+require('nvim-tree').setup()
+
