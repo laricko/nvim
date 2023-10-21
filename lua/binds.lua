@@ -1,5 +1,5 @@
--- Remove all default mappings
-vim.cmd('mapclear')
+-- Unmapping
+require('unmaps')
 
 -- Map Alt + Left Arrow to Tab previous
 vim.api.nvim_set_keymap('n', '<M-Left>', ':tabprevious<CR>', { noremap = true, silent = true })
@@ -48,4 +48,6 @@ vim.api.nvim_set_keymap('n', '<A-Up>', ':m .-2<CR>', { noremap = true, silent = 
 -- Map Alt + Down Arrow to move the current line down
 vim.api.nvim_set_keymap('n', '<A-Down>', ':m .+1<CR>', { noremap = true, silent = true })
 
+-- Map Ctrl + Backspace for delete all word. Note that C-H handle Ctrl + Backspace aswell 
+vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', {noremap = true})
 
