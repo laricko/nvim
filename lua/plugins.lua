@@ -1,11 +1,10 @@
 require('packer').startup(function(use)
-  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-
   use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-web-devicons'
 
 end)
 
-require('nvim-tree').setup()
+require('nvim_tree_config')
 
